@@ -14,7 +14,7 @@ public class smallestDivisibleDigitProductOne {
             n++;
         }
     }
-
+    
     public static void main(String[] args) {
         int n = 1;
         int t = 2;
