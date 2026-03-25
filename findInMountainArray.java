@@ -1,4 +1,4 @@
-class MountainArray {
+class MountainArray { // Simulating the MountainArray interface
     private int[] arr;
     private int calls = 0;
 
@@ -20,15 +20,15 @@ class MountainArray {
     }
 }
 
-public class findInMountainArray {
-    public static int findInMountain(int target, MountainArray mountainArr) {
-        int peak = findPeak(mountainArr);
+public class findInMountainArray { 
+    public static int findInMountain(int target, MountainArray mountainArr) { 
+        int peak = findPeak(mountainArr); // First find the peak of the mountain array
 
-        int left = binarySearch(mountainArr, target, 0, peak, true);
+        int left = binarySearch(mountainArr, target, 0, peak, true); // Search in the ascending part of the array i.e. from index 0 to peak
         if (left != -1)
             return left;
 
-        return binarySearch(mountainArr, target, peak + 1, mountainArr.length() - 1, false);
+        return binarySearch(mountainArr, target, peak + 1, mountainArr.length() - 1, false); // If not found in the ascending part, search in the descending part of the array i.e. from index peak + 1 to end of the array
     }
 
     private static int findPeak(MountainArray arr) {
