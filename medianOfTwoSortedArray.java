@@ -15,11 +15,11 @@ public class medianOfTwoSortedArray {
                                                            // total number of elements is odd, and an equal number of
                                                            // elements when it's even.
 
-            int maxleft1 = (partition1 == 0) ? Integer.MAX_VALUE : nums1[partition1 - 1];
-            int minRight1 = (partition1 == m) ? Integer.MIN_VALUE : nums1[partition1];
+            int maxleft1 = (partition1 == 0) ? Integer.MIN_VALUE : nums1[partition1 - 1];
+            int minRight1 = (partition1 == m) ? Integer.MAX_VALUE : nums1[partition1];
 
-            int maxleft2 = (partition2 == 0) ? Integer.MAX_VALUE : nums2[partition2 - 1];
-            int minRight2 = (partition2 == m) ? Integer.MIN_VALUE : nums2[partition2];
+            int maxleft2 = (partition2 == 0) ? Integer.MIN_VALUE : nums2[partition2 - 1];
+            int minRight2 = (partition2 == n) ? Integer.MAX_VALUE : nums2[partition2];
 
             if (maxleft1 <= minRight2 && maxleft2 <= minRight1) {
                 if ((m + n) % 2 == 0) {
@@ -41,7 +41,7 @@ public class medianOfTwoSortedArray {
 
     public static void main(String[] args) {
         int nums1[] = { 1, 3 };
-        int nums2[] = { 2, 4 };
+        int nums2[] = { 2 };
         System.out.println(findMedian(nums1, nums2));
     }
 }
