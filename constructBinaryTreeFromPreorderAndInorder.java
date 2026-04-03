@@ -24,7 +24,7 @@ public class constructBinaryTreeFromPreorderAndInorder {
         if (left > right)
             return null;
 
-        int rootVal = preorder[preIndex++];
+        int rootVal = preorder[preIndex++]; // It takes the current root value from preorder and increments the index for the next call
         TreeNode root = new TreeNode(rootVal);
 
         int index = map.get(rootVal);
