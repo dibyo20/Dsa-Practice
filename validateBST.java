@@ -35,7 +35,7 @@ public class validateBST {
         inorder(root.right);
     }
 
-    public static boolean isValidBST(Node root, Node min, Node max) {
+    public static boolean isValidBST(Node root, Node min, Node max) { // TC: O(N), where 'N' is number of nodes in tree and SC: O(H), where 'H' is height of tree.
         if (root == null) {
             return true;
         }
@@ -49,6 +49,26 @@ public class validateBST {
         }
 
         return isValidBST(root.left, min, root) && isValidBST(root.right, root, max);
+    }
+
+    public static boolean isValidBST(TreeNode root) {  // This is another approach to validate BST using inorder traversal. And have same time complexity as above approach.
+        return inorder(root);
+    }
+
+    static long prev = Long.MIN_VALUE;
+
+    public static boolean inorder(TreeNode node) {
+        if (node == null)
+            return true;
+
+        if (!inorder(node.left))
+            return false;
+
+        if (node.val <= prev)
+            return false;
+        prev = node.val;
+
+        return inorder(node.right);
     }
 
     public static void main(String args[]) {
