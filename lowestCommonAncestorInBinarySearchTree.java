@@ -36,7 +36,6 @@ public class lowestCommonAncestorInBinarySearchTree {
         TreeNode p = root.left; // 2
         TreeNode q = root.right; // 8
         TreeNode lca = lowestCommonAncestor(root, p, q);
-
         System.out.println("LCA: " + lca.val);
     }
 }
