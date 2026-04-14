@@ -18,6 +18,7 @@ public class mapOfHighestPeak {
                 }
             }
         }
+
         int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
         while (!queue.isEmpty()) {
