@@ -37,7 +37,7 @@ public class numberOfDistinctIslands {
 
         visited[row][col] = true;
 
-        shape.add((row - baseRow) + ":" + (col - baseCol));
+        shape.add((row - baseRow) + ":" + (col - baseCol)); // Change the coordinates to relative coordinates i.e. change the base point to (0,0). This will help in comparing the shapes.
 
         dfs(grid, visited, row + 1, col, baseRow, baseCol, shape);
         dfs(grid, visited, row - 1, col, baseRow, baseCol, shape);
