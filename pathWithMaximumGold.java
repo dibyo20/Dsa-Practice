@@ -22,7 +22,6 @@ public class pathWithMaximumGold {
 
         grid[i][j] = 0;
 
-        // explore all 4 directions
         int up = dfs(grid, i - 1, j);
         int down = dfs(grid, i + 1, j);
         int left = dfs(grid, i, j - 1);
