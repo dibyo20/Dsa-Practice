@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class minimumOperationsToReduceXToZero {
     public static int minOperations(int[] nums, int x) {
         int total = 0;
