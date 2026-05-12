@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class continuousSubarraySum {
+public class intersectionOfTwoArraysTwo {
     public static int[] intersect(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
             return intersect(nums2, nums1);
