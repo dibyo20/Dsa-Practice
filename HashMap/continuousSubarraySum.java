@@ -26,7 +26,6 @@ public class continuousSubarraySum {
         for (int i = 0; i < result.size(); i++) {
             res[i] = result.get(i);
         }
-
         return res;
     }
 
