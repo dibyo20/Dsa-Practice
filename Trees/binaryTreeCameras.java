@@ -30,7 +30,7 @@ public class binaryTreeCameras {
             return 1;
         }
 
-        if (left == 1 && right == 1) {
+        if (left == 1 || right == 1) {
             return 2;
         }
         return 0;
