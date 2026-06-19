@@ -1,4 +1,4 @@
-public class MaximumTwinSumOfALinkedList {
+public class maximumTwinSumOfALinkedList {
     public static class ListNode {
         int val;
         ListNode next;
