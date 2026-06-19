@@ -1,4 +1,4 @@
-public class ProcessStringWithSpecialOperationsTwo {
+public class processStringWithSpecialOperationsTwo {
     public static char processString(String s, long k) {
         int n = s.length();
         long len[] = new long[n];
