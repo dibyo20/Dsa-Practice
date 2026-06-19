@@ -1,4 +1,4 @@
-public class WeightedWordMapping {
+public class weightedWordMapping {
     public static String mapWordWeights(String[] words, int[] weights) {
         StringBuilder mapped = new StringBuilder();
 
