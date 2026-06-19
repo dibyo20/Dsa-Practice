@@ -1,4 +1,4 @@
-public class RemoveDuplicatesFromSortedArrayTwo {
+public class removeDuplicatesFromSortedArrayTwo {
     public static int removeDuplicates(int[] nums) {
         int n = nums.length;
 
