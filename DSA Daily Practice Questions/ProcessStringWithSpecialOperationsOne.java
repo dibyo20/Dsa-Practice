@@ -1,4 +1,4 @@
-public class ProcessStringWithSpecialOperationsOne {
+public class processStringWithSpecialOperationsOne {
     public static String processString(String s) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
