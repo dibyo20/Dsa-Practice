@@ -1,4 +1,4 @@
-public class DeleteTheMiddleNodeOfALinkedList {
+public class deleteTheMiddleNodeOfALinkedList {
     public static class ListNode {
         int val;
         ListNode next;
