@@ -21,6 +21,7 @@ public class linkedListCycleTwo {
                 break;
             }
         }
+        
         if (cycle == false) {
             return null;
         }
