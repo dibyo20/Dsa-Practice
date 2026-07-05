@@ -9,7 +9,7 @@ public class twoSumTwoSortedArray {
             int sum = numb[left] + numb[right];
 
             if (sum == target) {
-                return new int[] { left + 1, right + 1 }; // to start from 1 instead of 0.
+                return new int[] { left, right }; // to start from 1 instead of 0.
             } else if (sum < target) {
                 left++;
             } else {
