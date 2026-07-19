@@ -3,7 +3,6 @@ import java.util.*;
 public class removeDuplicateLetters {
     public static String removeDuplicate(String s) {
         int freq[] = new int[26];
-        ;
         int isVisited[] = new int[26];
         Stack<Character> st = new Stack<>();
 
