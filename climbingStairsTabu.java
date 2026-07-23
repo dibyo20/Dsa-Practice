@@ -1,7 +1,5 @@
-import java.util.Arrays;
-
 public class climbingStairsTabu {  // TC: O(n), SC: O(n)
-    public static int climbStairs(int n, int[] ways) {
+    public static int climbStairs(int n) {
         int dp[] = new int[n + 1];
         dp[0] = 1;
         for (int i = 1; i <= n; i++) {
@@ -16,9 +14,7 @@ public class climbingStairsTabu {  // TC: O(n), SC: O(n)
     }
 
     public static void main(String[] args) {
-        int n = 5;
-        int ways[] = new int[n + 1];
-        Arrays.fill(ways, -1);
-        System.out.println("Number of ways to climb " + n + " stairs: " + climbStairs(n, ways));
+        int n = 2;
+        System.out.println("Number of ways to climb " + n + " stairs: " + climbStairs(n));
     }
 }
