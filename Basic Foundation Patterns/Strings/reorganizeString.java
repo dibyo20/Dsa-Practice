@@ -1,5 +1,4 @@
 import java.util.PriorityQueue;
-
 public class reorganizeString {
     public static class Pair {
         char c;
