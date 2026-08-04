@@ -14,7 +14,7 @@ public class stringcompression {
                 count = 1;
             }
         }
-        return sb.toString().length();
+        return sb.toString().length() < str.length() ? sb.toString() : str;
     }
 
     // String newstr = "";
