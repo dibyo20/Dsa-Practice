@@ -16,8 +16,8 @@ public class smallestDivisibleDigitProductOne {
     }
 
     public static void main(String[] args) {
-        int n = 15;
-        int t = 3;
+        int n = 10;
+        int t = 2;
         System.out.println(smallestNumber(n, t));
     }
 }
