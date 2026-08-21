@@ -1,5 +1,5 @@
 public class countSubmatricesWithAllOnes {
-    public static int countSubmatricesWithlOnes(int[][] matrix) {
+    public static int countSubmatricesWithOnes(int[][] matrix) {
         int[] heights = new int[matrix[0].length];
         int ans = 0;
 
@@ -29,6 +29,6 @@ public class countSubmatricesWithAllOnes {
                 { 1, 1, 0 },
                 { 1, 1, 0 }
         };
-        System.out.println(countSubmatricesWithlOnes(matrix));
+        System.out.println(countSubmatricesWithOnes(matrix));
     }
 }
