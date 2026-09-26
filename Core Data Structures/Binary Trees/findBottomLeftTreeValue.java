@@ -11,8 +11,8 @@ public class findBottomLeftTreeValue {
         }
     }
 
-    public static int ans = 0;
-    public static int maxLevel = 0;
+    public static int ans;
+    public static int maxLevel = -1;
 
     public static int findBottomLeftValue(TreeNode root) {
         dfs(root, 0);
