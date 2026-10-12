@@ -1,6 +1,6 @@
 public class powerOfTwo {
     public static boolean isPowerOfTwo(int n) {
-        return n > 0 && 1073741824 % n == 0;
+        return n > 0 && (n & (n - 1)) == 0;
     }
 
     public static void main(String[] args) {
