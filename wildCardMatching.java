@@ -1,7 +1,7 @@
 public class wildCardMatching {
-    public static boolean wildcard(String str1, String str2) { // TC : O(n*m)
-        int n = str1.length();
-        int m = str2.length();
+    public static boolean wildcard(String s, String p) { // TC : O(n*m)
+        int n = s.length();
+        int m = p.length();
 
         boolean dp[][] = new boolean[n + 1][m + 1];
 
@@ -12,16 +12,16 @@ public class wildCardMatching {
         }
 
         for (int j = 1; j < m + 1; j++) {
-            if (str2.charAt(j - 1) == '*') {
+            if (p.charAt(j - 1) == '*') {
                 dp[0][j] = dp[0][j - 1];
             }
         }
 
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
-                if (str1.charAt(i - 1) == str2.charAt(j - 1) || str2.charAt(j - 1) == '?') {
+                if (s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '?') {
                     dp[i][j] = dp[i - 1][j - 1];
-                } else if (str2.charAt(j - 1) == '*') {
+                } else if (p.charAt(j - 1) == '*') {
                     dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
                 } else {
                     dp[i][j] = false;
@@ -32,8 +32,8 @@ public class wildCardMatching {
     }
 
     public static void main(String args[]) {
-        String str1 = "baaabab";
-        String str2 = "*****ba*****ab";
-        System.out.println(wildcard(str1, str2));
+        String s = "baaabab";
+        String p = "*****ba*****ab";
+        System.out.println(wildcard(s, p));
     }
 }
